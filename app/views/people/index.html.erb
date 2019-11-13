@@ -1,6 +1,7 @@
-<h1> People </h1>
 <%= render 'layouts/navbar' %>
 <%= yield %>
+<h1> People </h1>
+
 <% @people.each do |person| %>
 	<%title = person.title %>
 	<%if title == "None"%>
@@ -11,5 +12,3 @@
 	<%= link_to 'Edit Person', edit_person_path(person.id) %>
 	<%= link_to 'Destroy Person', person_path(person.id), method: :delete %>
 <% end %>
-<%= link_to 'Home', root_path %>
-<%= link_to 'New Person', new_person_path %>
