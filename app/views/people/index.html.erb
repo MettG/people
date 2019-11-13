@@ -1,4 +1,6 @@
 <h1> People </h1>
+<%= render 'layouts/navbar' %>
+<%= yield %>
 <% @people.each do |person| %>
 	<%title = person.title %>
 	<%if title == "None"%>

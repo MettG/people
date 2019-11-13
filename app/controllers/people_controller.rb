@@ -38,7 +38,7 @@ class PeopleController < ApplicationController
 
 	def destroy
 		Person.find(params[:id]).destroy
-  	redirect_to pages_path
+  	redirect_to people_path
 	end
 
 	def full_name
@@ -46,7 +46,7 @@ class PeopleController < ApplicationController
 	end
 
 	def home
-		
+
 	end
 	private
 
