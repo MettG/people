@@ -1,0 +1,13 @@
+<h1> People </h1>
+<% @people.each do |person| %>
+	<%title = person.title %>
+	<%if title == "None"%>
+		<%title = ""%>
+	<%end%>
+  <h2><%= title + " " + person.first_name %></h2>
+  <%= link_to 'Show Person', person_path(person.id) %>
+	<%= link_to 'Edit Person', edit_person_path(person.id) %>
+	<%= link_to 'Destroy Person', person_path(person.id), method: :delete %>
+<% end %>
+<%= link_to 'Back', people_path %>
+<%= link_to 'New Person', new_person_path %>

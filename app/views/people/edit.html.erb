@@ -1,0 +1,29 @@
+<h1>Edit Person</h1>
+<%= form_for @person do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.label :rank %>
+  <%= f.text_area :rank %>
+
+  <%= f.label :role %>
+  <%= f.text_area :role %>
+
+  <%= f.label :age %>
+  <%= f.text_area :age %>
+
+	<%= f.label :server %>
+	<%= select_tag(:server,options_for_select([['NA',1],['EUW',2],['KR',3]],1))%>
+
+	<%= f.label :language %>
+	<%= select_tag(:language,options_for_select([['English',1],['German',2],['Korean',3]],1))%>
+
+	<%= f.label :free_agent %>
+	<%= select_tag(:free_agent,options_for_select([[true,1],[false,2]],1))%>
+	
+	<%= f.submit %>
+<% end %>
+<%= link_to 'Back', people_path %>

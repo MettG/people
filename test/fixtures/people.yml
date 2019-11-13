@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  age: 1
+  server: MyString
+  title: MyString
+  role: MyString
+  rank: MyString
+  language: MyString
+  free_agent: false
+
+two:
+  first_name: MyString
+  last_name: MyString
+  age: 1
+  server: MyString
+  title: MyString
+  role: MyString
+  rank: MyString
+  language: MyString
+  free_agent: false
