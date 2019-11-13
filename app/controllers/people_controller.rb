@@ -45,6 +45,9 @@ class PeopleController < ApplicationController
 		@person.first_name + " " + @person.last_name
 	end
 
+	def home
+		
+	end
 	private
 
    def people_params
